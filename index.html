@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Games Hub</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .container {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    .game-card {
+      border: 1px solid #eee;
+      border-radius: 10px;
+      background: #fafafa;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+    .game-card:hover {
+      transform: scale(1.01);
+    }
+    .game-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-bottom: 1px solid #ddd;
+    }
+    .game-title {
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .game-frame {
+      width: 100%;
+      height: 260px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Online Games Hub</h1>
+  </header>
+  <div class="container">
+    <!-- Repeat this block for each game -->
+    <div class="game-card">
+      <img src="https://www.onlinegames.io/media/posts/482/responsive/Head-Soccer-Football-xs.jpg" alt="Head Soccer Football">
+      <div class="game-title">Head Soccer Football</div>
+      <iframe class="game-frame" src="https://www.onlinegames.io/games/2022/unity/head-soccer-football/index.html" allowfullscreen></iframe>
+    </div>
+
+    <div class="game-card">
+      <img src="https://www.onlinegames.io/media/posts/712/responsive/Truck-Racing-xs.jpg" alt="Truck Racing">
+      <div class="game-title">Truck Racing</div>
+      <iframe class="game-frame" src="https://www.onlinegames.io/games/2022/construct/144/truck-racing/index.html" allowfullscreen></iframe>
+    </div>
+
+    <div class="game-card">
+      <img src="https://www.onlinegames.io/media/posts/472/responsive/Among-Impostor-xs.jpg" alt="Among Impostor">
+      <div class="game-title">Among Impostor</div>
+      <iframe class="game-frame" src="https://www.onlinegames.io/games/2023/construct/234/among-impostor/index.html" allowfullscreen></iframe>
+    </div>
+
+    <!-- Add more games below using the same format -->
+  </div>
+</body>
+</html>
